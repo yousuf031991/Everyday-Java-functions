@@ -1,0 +1,21 @@
+/**
+	 * @param array
+	 *            which is already sorted
+	 * @param item
+	 *            to be found
+	 * @return position of item in array
+	 */
+	public static int binarySearch(int arr[], int item) {
+		int start = 0, end = arr.length - 1, mid;
+		while (start <= end) {
+			mid = (start + end) / 2;
+			if (arr[mid] == item) {
+				return mid;
+			} else if (item < arr[mid]) {
+				end = mid - 1;
+			} else {
+				start = mid + 1;
+			}
+		}
+		return -1;
+	}
