@@ -1,0 +1,8 @@
+public static char cR(BufferedReader buffer) throws IOException {
+		char tempChar = (char) buffer.read();
+		while (!(tempChar >= 65 && tempChar <= 90)
+				&& !(tempChar >= 97 && tempChar <= 122)) {
+			tempChar = (char) buffer.read();
+		}
+		return tempChar;
+	}
