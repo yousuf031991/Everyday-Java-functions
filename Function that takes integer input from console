@@ -1,0 +1,8 @@
+public static int iR(BufferedReader buffer) throws IOException {
+		int tempInt = buffer.read();
+		while (!(tempInt >= 48 && tempInt <= 57)) {
+			tempInt = buffer.read();
+		}
+		char temp = (char) tempInt;
+		return Character.getNumericValue(temp);
+	}
