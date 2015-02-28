@@ -1,0 +1,9 @@
+public static int numDigs(long input) {
+		int test = 10;
+		int numDigs = 1;
+		while (input / test != 0) {
+			numDigs++;
+			test *= 10;
+		}
+		return numDigs;
+	}
