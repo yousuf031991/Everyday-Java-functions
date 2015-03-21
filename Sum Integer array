@@ -1,0 +1,7 @@
+public static long sumIntArray(int arr[], int curStart, int curEnd) {
+		long sum=0;
+		for (int i = curStart; i <= curEnd; i++) {
+			sum+=arr[i];
+		}
+		return sum;
+	}
