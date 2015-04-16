@@ -1,0 +1,8 @@
+public static int sumOfdigits(int N) {
+		int sod=0;
+		while(N!=0){
+			sod+=N%10;
+			N/=10;
+		}
+		return sod;
+	}
